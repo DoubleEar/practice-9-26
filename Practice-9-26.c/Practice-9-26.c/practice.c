@@ -1,6 +1,6 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
 //猜数字
-#include <stdio.h>
+//#include <stdio.h>
 //#include <stdlib.h>
 //#include<time.h>
 //void menu()
@@ -103,58 +103,58 @@
 //
 //}
 //封装函数
-int binary_search(int arr[], int input, int sz)
-{
-	int left = 0;
-	int right = sz - 1;
-		printf("请输入你要查找的数：\n");
-		scanf("%d", &input);
-		while (left <= right)
-		{
-			int mid = (left + right) / 2;
-			if (input > arr[mid])
-			{
-				left = mid + 1;
-			}
-			else if (input < arr[mid])
-			{
-				right = mid - 1;
-			}
-			else
-			{
-				return mid;
-				break;
-			}
-		}
-		return -1;
-	}
-
-
-
-
-	int main()
-	{
-		int ret = 0;
-		int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		int input = 0;
-		int sz = sizeof(arr) / sizeof(arr[0]);
-		while (1)
-		{
-			ret = binary_search(arr, input, sz);
-			if (ret == -1)
-			{
-				printf("没找到诶\n");
-			}
-			else
-			{
-				printf("找到啦，下标是：%d\n", ret);
-			}
-		}
-		return 0;
-
-	}
-
-
+//int binary_search(int arr[], int input, int sz)
+//{
+//	int left = 0;
+//	int right = sz - 1;
+//		printf("请输入你要查找的数：\n");
+//		scanf("%d", &input);
+//		while (left <= right)
+//		{
+//			int mid = (left + right) / 2;
+//			if (input > arr[mid])
+//			{
+//				left = mid + 1;
+//			}
+//			else if (input < arr[mid])
+//			{
+//				right = mid - 1;
+//			}
+//			else
+//			{
+//				return mid;
+//				break;
+//			}
+//		}
+//		return -1;
+//	}
+//
+//
+//
+//
+//	int main()
+//	{
+//		int ret = 0;
+//		int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//		int input = 0;
+//		int sz = sizeof(arr) / sizeof(arr[0]);
+//		while (1)
+//		{
+//			ret = binary_search(arr, input, sz);
+//			if (ret == -1)
+//			{
+//				printf("没找到诶\n");
+//			}
+//			else
+//			{
+//				printf("找到啦，下标是：%d\n", ret);
+//			}
+//		}
+//		return 0;
+//
+//	}
+//
+//
 //编写代码模拟三次密码输入的场景。
 //#include<string.h>
 //int main()
@@ -182,7 +182,7 @@ int binary_search(int arr[], int input, int sz)
 //	}
 //	return 0;
 //}
-
+//
 
 //编写一个程序，可以直接收键盘字符，如果是小写字符就输出对应的大写字符，如果是数字不输出。
 //int main()
